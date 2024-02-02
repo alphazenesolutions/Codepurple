@@ -1,0 +1,74 @@
+.BookDemoContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 20px 0 0 20px;
+  height: 100vh;
+  width: 25vw;
+  z-index: 1002;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px 30px;
+}
+.BookDemoLogo {
+  width: 100%;
+}
+
+.B_inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.B_inputContainer label {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.B_inputContainer input,
+.B_inputContainer select {
+  width: 100%;
+  padding: 7px;
+  font-family: var(--primary-font);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.B_inputContainer textarea {
+  width: 70%;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  border: 1px solid lightgray;
+}
+.BookDemoContainer button {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  font-family: var(--secondary-font);
+  margin-bottom: 20px;
+}
+.overLay_B {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .BookDemoContainer {
+    border-radius: 50px 0 0 50px;
+    width: 90%;
+  }
+}

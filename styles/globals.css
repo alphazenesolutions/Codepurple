@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+:root {
+  /* color Codes */
+  --primary-color: #473e66;
+  --secondary-color: #ebebea;
+  --tertiary-color: #97c680;
+  --color-purple: #f2f1f4;
+  --color-white: #fafafa;
+  /* --color-black: black; */
+  --color-black: #1e1e1e;
+
+  /* fonts */
+  --primary-font: "Quicksand", sans-serif;
+  --secondary-font: "Nunito", sans-serif;
+
+  /* margin */
+  --section-margin: 50px;
+}
+.section-width {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  font-size: 10px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f7f9fa;
+  /* background-color: white; */
+}
+a {
+  text-decoration: none;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  height: 11px;
+  background: var(--color-black);
+  transform-origin: 0%;
+}
+.swiper {
+  width: 300px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.swiper-pagination {
+  margin-bottom: -50px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 1800px) {
+  .section-width {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 600px) {
+  .section-width {
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,14 @@
+.CourseRoadMapContainer {
+  position: relative;
+  height: 100vh;
+  /* height: 100vh;
+  position: relative; */
+}
+.CourseRoadMapBG {
+  /* position: absolute; */
+  /* width: 100vw; */
+  /* background-color: var(--color-black); */
+  /* bottom: 0;
+  transform: translate(-50%, 50%);
+  left: 0; */
+}

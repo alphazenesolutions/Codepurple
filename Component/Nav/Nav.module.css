@@ -1,0 +1,231 @@
+.navContainer {
+  /* margin-bottom: var(--section-margin);
+  margin-top: var(--section-margin); */
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  justify-content: space-between;
+}
+.activeNav {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+}
+.NavLogo {
+  width: 300px;
+}
+.navContainer h1 {
+  font-family: var(--secondary-font);
+  font-size: 45px;
+}
+.navMenus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navMenus p {
+  margin-right: 25px;
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  transition: all 0.5s;
+}
+.navMenu:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.navMenus button {
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  background-color: var(--color-black);
+  padding: 9px 10px;
+  border-radius: 10px;
+  color: var(--color-white);
+}
+.navMenuIcon {
+  transition: all 0.2s;
+}
+.navMenuIcon:hover {
+  cursor: pointer;
+}
+.navMenuIcon:active {
+  transform: scale(0.8);
+}
+.overLay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+/* contactContainer */
+.contactContainer {
+  height: 83vh;
+  overflow: scroll;
+  background-color: white;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  border: 0;
+  width: 100vw;
+  bottom: 0;
+  z-index: 10;
+  padding: 20px 170px;
+}
+.contactContainer hr {
+  margin-top: 20px;
+  opacity: 0.6;
+}
+.contactHeading h1 {
+  font-family: var(--secondary-font);
+  font-size: 6.5rem;
+}
+.contactHeading {
+  display: flex;
+  align-items: flex-end;
+}
+.contactHeadingHightlight {
+  margin-left: 20px;
+  position: relative;
+}
+.contactHeadingHightlight_img1 {
+  position: absolute;
+  right: -40%;
+
+  top: -10%;
+}
+.contactHeadingHightlight_img2 {
+  position: absolute;
+  top: 5px;
+  width: 240px;
+  height: 80px;
+  z-index: -1;
+  left: -20px;
+}
+.contactHeadingHightlight h1 {
+  color: var(--color-white);
+}
+.contactHeadingContainer p {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  margin-top: 15px;
+  line-height: 1.6;
+}
+.contactHeadingContainer {
+  position: relative;
+}
+.contactHeadingHeart {
+  position: absolute;
+  right: 0;
+  top: -10%;
+  width: 200px;
+}
+.contactDetailsContainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+.contactForm {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  flex-direction: column;
+}
+.c_inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.c_inputContainer label {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.c_inputContainer input {
+  width: 70%;
+  padding: 7px;
+  font-family: var(--primary-font);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.c_inputContainer textarea {
+  width: 70%;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  border: 1px solid lightgray;
+}
+.contactForm button {
+  width: 70%;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  font-family: var(--secondary-font);
+  margin-bottom: 20px;
+}
+/* contactAddress */
+.contactAddress h1 {
+  font-size: 3rem;
+  font-family: var(--secondary-font);
+  margin-bottom: 5px;
+}
+.contactAddress_p {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.ourMobile,
+.ourMail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+}
+.ourMobile p,
+.ourMail p {
+  font-size: 1.4rem;
+  font-family: var(--primary-font);
+  margin-left: 20px;
+}
+.ourAddress {
+  display: flex;
+  align-items: flex-start;
+}
+.ourAddressContainer {
+  margin-left: 20px;
+}
+.ourAddressContainer div {
+  margin-bottom: 20px;
+}
+.ourAddressContainer div p {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: rgb(128, 126, 126);
+}
+.ourAddressContainer div h3 {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 600px) {
+  .navMenus {
+    display: none;
+  }
+  .navContainer {
+    height: 15vh;
+  }
+  .NavLogo {
+    width: 200px;
+  }
+}

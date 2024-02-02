@@ -1,0 +1,135 @@
+.courseExpandMain {
+  width: 100%;
+  height: 1200px;
+  margin-top: 90px;
+  padding-top: 30px;
+}
+
+.courseExpandMainHeadContainer {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 20px;
+}
+.courseExpandMainHeadHeading {
+  position: relative;
+}
+.courseExpandMainHeadHeading h1 {
+  font-size: 4rem;
+  width: 100%;
+  /* text-align: left; */
+  font-family: var(--secondary-font);
+}
+.courseExpandMainHeadHeading img {
+  position: absolute;
+  right: -10%;
+  top: -25%;
+}
+.courseExpandMainHeadHeading p {
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+
+.courseExpandHead {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.courseExpandHead h1 {
+  /* width: 100%; */
+  font-size: 5rem;
+  font-family: var(--secondary-font);
+  /* font-weight: 1000; */
+}
+.courseExpandHead p {
+  width: 50%;
+  font-size: 2rem;
+}
+.courseExpandDesc {
+  width: 100%;
+  height: 400px;
+}
+
+.syllabusContainer {
+  position: relative;
+}
+.syllabusContainer img {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  z-index: -1;
+}
+.syllabusContainer h1 {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+}
+.syllabusContainer h1 span {
+  color: var(--color-white);
+}
+/*========================= first Expand===================== */
+
+.friendlyTraining {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+.friendlyFlex {
+  width: 100%;
+  height: 0%;
+  display: flex;
+  overflow: hidden;
+}
+.friendlyTrainingLeft {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 25px;
+}
+.friendlyTrainingLeft li {
+  font-size: 2.2rem;
+  line-height: 1.7;
+  margin: 20px 0;
+  font-family: var(--primary-font);
+}
+.friendlyTrainingLeft h5 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2;
+  font-family: var(--primary-font);
+  /* text-align: center; */
+}
+.friendlyTrainingRight {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.friendlyHead {
+  display: flex;
+  align-items: center;
+}
+.courseExpandIcon {
+  font-size: 3rem;
+  margin-right: 30px;
+}
+.friendlyHead h1 {
+  font-size: 5rem;
+  font-family: var(--secondary-font);
+}
+@media (max-width: 600px) {
+  
+}

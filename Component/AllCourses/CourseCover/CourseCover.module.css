@@ -1,0 +1,51 @@
+.CourseCover {
+  display: inline;
+  position: relative;
+}
+.CourseCoverBody {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.CourseCover h1 {
+  font-size: 6rem;
+  font-family: var(--secondary-font);
+  text-align: center;
+  margin: 50px 0;
+}
+.CourseCoverG {
+  color: var(--tertiary-color);
+}
+.CourseCoverP {
+  color: var(--primary-color);
+}
+.CourseCover img {
+  position: absolute;
+  top: 10%;
+  right: 14%;
+}
+.CourseCoverHeading_m {
+  display: none;
+}
+@media (max-width: 600px) {
+  .CourseCoverBody {
+    height: 100%;
+  }
+  .CourseCover h1 {
+    font-size: 2.5rem;
+    margin: 10px 0 5px 0;
+  }
+  .CourseCoverHeading_w {
+    display: none;
+  }
+  .CourseCoverHeading_m {
+    display: block;
+  }
+  .CourseCover img {
+    top: -10%;
+    right: 5%;
+    width: 50px;
+  }
+}

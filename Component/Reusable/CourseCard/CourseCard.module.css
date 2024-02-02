@@ -1,0 +1,106 @@
+.CourseCardContainer {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+.CourseCardPadding {
+  padding: 10px 10px 20px 10px;
+  max-width: 100%;
+}
+.CourseCardContainer hr {
+  opacity: 0.7;
+}
+.CourseCardContainer img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 20px 20px 0 0;
+}
+.CourseCardHead {
+  font-size: 2rem;
+  font-family: var(--secondary-font);
+  margin: 10px 0;
+}
+.CourseCardDesc {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: var(--primary-font);
+}
+.CoursePrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CoursePrice div {
+  display: flex;
+  align-items: center;
+}
+.CoursePrice h1 {
+  font-size: 30px;
+  font-family: var(--secondary-font);
+}
+.CoursePrice h1:first-child {
+  color: #fa5c29;
+}
+.CoursePriceAction {
+  font-size: 3rem;
+}
+.CoursePriceAction:hover {
+  cursor: pointer;
+}
+.CoursePrice_ {
+  margin: 0 20px;
+}
+.courseDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courseStudents h3 {
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+}
+.courseStudents p {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.courseduration,
+.courseModule {
+  display: flex;
+  align-items: center;
+}
+.courseduration h3,
+.courseModule h3 {
+  font-family: var(--secondary-font);
+  font-size: 2.4rem;
+}
+.courseduration p,
+.courseModule p {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  margin-left: 10px;
+}
+.courseLessons {
+  display: flex;
+}
+.courseduration {
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .CourseCardHead {
+    font-size: 2.3rem;
+    margin: 7px 0;
+  }
+  .CourseCardDesc {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  .CourseCardHr {
+    margin: 20px 0 !important;
+  }
+  .CoursePrice h1 {
+    font-size: 2.5rem;
+  }
+}

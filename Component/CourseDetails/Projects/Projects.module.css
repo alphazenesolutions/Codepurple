@@ -1,0 +1,178 @@
+.ProjectsContaienr {
+}
+.courseExpandMainHeadContainer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 20px;
+}
+
+.courseExpandMainHeadContainer h1 {
+  font-size: 4rem;
+  width: 100%;
+  font-family: var(--secondary-font);
+}
+
+.courseExpandMainHeadContainer p {
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.Projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.Projects section {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 20px;
+}
+.Project1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Project1 h1,
+.Project5 h1 {
+  font-family: var(--secondary-font);
+  color: var(--color-black);
+  font-size: 4rem;
+}
+.Project1 p,
+.Project5 p {
+  color: var(--color-black);
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  line-height: 2;
+  margin-top: 10px;
+}
+.Project2,
+.Project4 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.Project2 img,
+.Project4 img {
+  width: 80px;
+}
+.Project4 img {
+  border-radius: 10px;
+}
+.Project2 div,
+.Project4 div {
+  margin-top: 20px;
+}
+.Project2 h1,
+.Project4 h1 {
+  font-family: var(--secondary-font);
+  color: var(--color-black);
+  font-size: 3rem;
+}
+.Project2 p,
+.Project4 p {
+  color: var(--color-black);
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  line-height: 2;
+  margin-top: 10px;
+}
+.Project3 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 100% !important;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -2;
+}
+.Project3 img {
+  position: absolute;
+  transform: rotate(-15deg) translate(20%, 5%);
+  width: 110%;
+  bottom: 0;
+  z-index: -1;
+}
+.Project3 h1 {
+  font-family: var(--secondary-font);
+  color: var(--color-black);
+  font-size: 3rem;
+}
+.Project3 p {
+  color: var(--color-black);
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  line-height: 2;
+}
+.Project5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .Projects section {
+    padding: 0px;
+    border-radius: 0;
+  }
+  .courseExpandMainHeadContainer {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .courseExpandMainHeadContainer h1 {
+    font-size: 2.3rem;
+    font-family: var(--secondary-font);
+  }
+
+  .courseExpandMainHeadContainer p {
+    font-family: var(--primary-font);
+    line-height: 1.8;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .Projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Project1,
+  .Project3,
+  .Project5,
+  .Project4,
+  .Project2 {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-end: auto;
+    grid-row-start: auto;
+  }
+  .Project1 h1,
+  .Project2 h1,
+  .Project3 h1,
+  .Project4 h1,
+  .Project5 h1 {
+    font-size: 2rem;
+  }
+  .Project1 p,
+  .Project2 p,
+  .Project3 p,
+  .Project4 p,
+  .Project5 p {
+    font-size: 1.4rem;
+  }
+  .Project2 img,
+  .Project3 img,
+  .Project4 img {
+    display: none;
+  }
+  .ProjectsContaienr {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,221 @@
+/* side Nav */
+.sideNavContainer {
+  height: 100vh;
+  padding: 0 20px;
+  background-color: var(--color-white);
+  width: 400px;
+  border-radius: 20px 0 0 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100 !important;
+}
+.sideNavContainer_web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.overLay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  cursor: pointer;
+}
+
+/* quotesContainer_Sn */
+
+.quotesContainer_Sn {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+  align-items: center;
+
+  flex-direction: column;
+}
+.quotesContainer_Sn h1 {
+  font-size: 6rem;
+  margin-bottom: 10px !important;
+  font-family: var(--secondary-font);
+}
+.quotesContainer_Sn h1:first-child {
+  color: var(--color-white);
+}
+.quotesContainer_Sn img {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transform: translateX(-10%);
+  z-index: -1;
+  width: 120%;
+}
+.sideBarCloseIconContainer {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: var(--color-black);
+}
+.sideBarCloseIcon {
+  font-family: var(--secondary-font);
+  font-size: 40px;
+  color: var(--color-white);
+}
+.sideBarCloseIconContainer:hover {
+  cursor: pointer;
+}
+.sideBarCloseIconContainer:active {
+  transform: scale(0.9);
+}
+/* courseSearchContainer_sidebar*/
+.courseSearchContainer_S_parent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.courseSearchContainer_S {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.courseSearchContainer_S input {
+  height: 60px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px 0 0 10px;
+  padding: 20px;
+  width: 100%;
+}
+.courseSearchContainer_S div {
+  height: 60px;
+  background-color: var(--tertiary-color);
+  width: 80px;
+  display: flex;
+  font-family: var(--secondary-font);
+  color: var(--color-white);
+  font-size: 40px;
+  border-radius: 0px 10px 10px 0px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+.courseSearchQuote {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: var(--primary-font);
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+.sideNavContainer_mob {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .sideNavContainer_web {
+    display: none;
+  }
+  .sideNavContainer {
+    z-index: 200 !important;
+    padding: 30px 5px 50px 5px;
+    width: 90vw;
+    border-radius: 50px 0 0 50px;
+  }
+  .sideNavContainer_mob hr {
+    width: 90%;
+    margin: auto;
+    opacity: 0.6 !important;
+    margin-top: 30px;
+  }
+  .sideNavContainer_mob {
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sideBarLogo {
+    width: 70%;
+    object-fit: contain;
+  }
+  .sideNavContent_mob {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .SidenavMenus_m {
+    padding: 0 30px;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .SidenavMenus_m p {
+    margin-right: 25px;
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+  }
+  .SidenavMenu_m:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .activeNav {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+  }
+  .quotesContainer_Sn {
+    margin-top: 10px;
+  }
+  .snavMobSearchCoruseContainer {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .snavMobSearchCoruse {
+    font-size: 2.5rem;
+    color: var(--color-black);
+    margin-bottom: 10px !important;
+    font-family: var(--secondary-font);
+  }
+
+  .courseSearchContainer_S input {
+    height: 40px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    width: 100%;
+  }
+  .courseSearchContainer_S div {
+    height: 40px;
+    width: 80px;
+    font-size: 25px;
+    padding: 5px;
+    flex-direction: column;
+  }
+  .courseSearchQuote {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: var(--primaryfont);
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+}

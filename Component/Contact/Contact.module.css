@@ -1,0 +1,133 @@
+.contactContainer {
+  background-color: white;
+  border: 0;
+  padding: 10px 20px;
+}
+.contactContainer hr {
+  margin-top: 20px;
+  opacity: 0.6;
+}
+.contactHeading h1 {
+  font-family: var(--secondary-font);
+  font-size: 3.5rem;
+}
+.contactHeading {
+  display: flex;
+  align-items: flex-end;
+}
+.contactHeadingHightlight {
+  margin-left: 20px;
+  position: relative;
+}
+
+.contactHeadingHightlight h1 {
+  color: var(--color-black);
+}
+.contactHeadingContainer p {
+  font-size: 1.3rem;
+  font-family: var(--primary-font);
+  margin-top: 15px;
+  line-height: 1.6;
+}
+.contactHeadingContainer {
+  position: relative;
+}
+.contactHeadingHeart {
+  position: absolute;
+  right: 0;
+  top: -10%;
+  width: 200px;
+}
+.contactDetailsContainer {
+  margin-top: 20px;
+}
+.contactForm {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+.c_inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.c_inputContainer label {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.c_inputContainer input {
+  width: 100%;
+  padding: 7px;
+  font-family: var(--primary-font);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.c_inputContainer textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  border: 1px solid lightgray;
+}
+.contactForm button {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  font-family: var(--secondary-font);
+  margin-bottom: 20px;
+}
+/* contactAddress */
+.contactAddress h1 {
+  font-size: 3rem;
+  font-family: var(--secondary-font);
+  margin-bottom: 5px;
+}
+.contactAddress_p {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.contactAddress img {
+  width: 50px;
+}
+.ourMobile,
+.ourMail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+}
+.ourMobile p,
+.ourMail p {
+  font-size: 1.7rem;
+  font-family: var(--primary-font);
+  margin-left: 20px;
+}
+.ourAddress {
+  display: flex;
+  align-items: flex-start;
+}
+.ourAddressContainer {
+  margin-left: 20px;
+}
+.ourAddressContainer div {
+  margin-bottom: 20px;
+}
+.ourAddressContainer div p {
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: rgb(128, 126, 126);
+}
+.ourAddressContainer div h3 {
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+}

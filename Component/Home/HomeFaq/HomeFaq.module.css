@@ -1,0 +1,227 @@
+.FaqBtn {
+  background-color: var(--color-black);
+  position: fixed;
+  left: 2%;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 4%;
+  border-radius: 30px 30px 30px 0;
+  transition: all 0.5s;
+  z-index: 199 !important;
+}
+.FaqBtn:hover {
+  cursor: pointer;
+}
+.FaqBtn:active {
+  cursor: pointer;
+}
+.FaqBtn p {
+  color: var(--color-white);
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+}
+.overLay_faq {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+/* faqhead */
+.faqContainer {
+  overflow: scroll;
+  padding: 20px 170px;
+  margin: auto;
+  margin-top: var(--margin-top);
+  margin-bottom: 100px;
+}
+.faqContainer hr {
+  margin-top: 20px;
+  opacity: 0.6;
+}
+.faqHeading h1 {
+  font-family: var(--secondary-font);
+  font-size: 6.5rem;
+}
+.faqHeading {
+  display: flex;
+  align-items: flex-end;
+}
+.faqHeadingHightlight {
+  margin-left: 20px;
+  position: relative;
+}
+.faqHeadingHightlight_img1 {
+  position: absolute;
+  right: -20%;
+  top: -10%;
+}
+.faqHeadingHightlight_img2 {
+  position: absolute;
+  top: 5px;
+  width: 360px;
+  height: 80px;
+  z-index: -1;
+  left: -20px;
+}
+.faqHeadingHightlight h1 {
+  color: var(--color-white);
+}
+.faqHeadingContainer p {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  margin-top: 15px;
+  line-height: 1.6;
+  color: var(--color-black);
+}
+.faqHeadingContainer {
+  position: relative;
+}
+.faqHeadingHeart {
+  position: absolute;
+  right: 0;
+  top: -10%;
+  width: 200px;
+}
+.faqBodyContent {
+  margin-top: 20px;
+}
+.faqBodyContentHead {
+  border-right: 1px solid lightgray;
+}
+.faqBodyContentHead h1 {
+  font-size: 3.3rem;
+  font-family: var(--secondary-font);
+  color: lightgray;
+  margin: 20px 0;
+  transition: all 0.5s;
+}
+.activFaq {
+  color: var(--color-black) !important;
+  font-size: 3.9rem !important;
+  display: inline;
+  padding-bottom: 4px;
+}
+/*  */
+
+.homeFaqHeadContainer {
+  display: flex;
+  margin-top: 20px;
+
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.homeFaqHeadHeading {
+  position: relative;
+}
+.homeFaqHeadHeading h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+.homeFaqHeadHeading img {
+  position: absolute;
+  right: -5%;
+  top: -20%;
+}
+.homeFaqHeadHeading p {
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.FaqQsHeading {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.FaqQsHeading h1 {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  color: rgb(191, 188, 188);
+  font-weight: 100 !important;
+  transition: all 0.4s;
+}
+.FaqQsHeading h1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.FaqQsHeading h1:active {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.FaqQsHead {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
+}
+.FaqQsHead h1 {
+  font-size: 2rem;
+  font-family: var(--secondary-font);
+}
+
+.FaqQsHeadOpen_ {
+  font-size: 3rem;
+}
+.FaqQs p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  line-height: 1.5;
+  font-family: var(--primary-font);
+  color: var(--color-black) !important;
+}
+.FaqQs {
+  margin: 10px 0;
+}
+.activeFaq {
+  color: var(--color-black) !important;
+  padding-bottom: 4px;
+}
+.FaqQsContainer {
+  max-height: 500px;
+  overflow: scroll;
+}
+.FaqQsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .faqContainer {
+    overflow: scroll;
+    padding: 20px 0px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .faqHeadingContainer p {
+    font-size: 1.2rem;
+  }
+  .faqHeading h1 {
+    font-size: 3.8rem;
+  }
+  .faqHeadingHightlight_img2 {
+    top: 5px;
+    width: 230px;
+    height: 45px;
+    z-index: -1;
+    left: -15px;
+  }
+  .faqHeadingHightlight_img1 {
+    display: none;
+  }
+}

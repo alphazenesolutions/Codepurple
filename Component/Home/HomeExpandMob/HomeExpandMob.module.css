@@ -1,0 +1,53 @@
+@media (max-width: 600px) {
+  .homeExpandMainHeadHeading_m h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+  }
+  .homeExpandMainHeadHeading_m img {
+    display: none;
+  }
+  .homeExpandMainHeadHeading_m p {
+    font-size: 1.3rem;
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  .homeExpandMain_m {
+    margin-top: 20px;
+  }
+  /*  */
+  .homeAboutUsContainer {
+    margin-top: 30px;
+  }
+  .homeAboutUsContent {
+    margin: 20px 0;
+  }
+  .coruseContentExpandIcon {
+    font-size: 1.9rem;
+    margin-right: 10px;
+  }
+  .coruseContentHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .coruseContentHead h1 {
+    font-size: 2.3rem;
+    font-family: var(--secondary-font);
+  }
+  .coruseContentDesc li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 24px 0;
+    font-family: var(--primary-font);
+  }
+  .coruseContentDesc h5 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 2;
+    font-family: var(--primary-font);
+  }
+}

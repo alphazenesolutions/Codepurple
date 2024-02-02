@@ -1,0 +1,95 @@
+.CoursesContainer {
+  margin-top: var(--section-margin);
+}
+.CoursesContainer hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.CoursesHeadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CoursesHeading {
+  position: relative;
+}
+.CoursesHeading h1 {
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+}
+.CoursesHeading img {
+  position: absolute;
+  right: 0;
+  top: -50%;
+}
+.CoursesHeadingContainer p {
+  line-height: 1.5;
+  margin: 10px 0;
+  font-family: var(--primary-font);
+  font-size: 1.7rem;
+}
+.CourseSearchContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.CourseSearchContainer input {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+.CourseSearchContainer select {
+  width: 170px;
+  padding: 10px;
+  border: 1px solid lightgray;
+
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 1.7rem;
+}
+.Courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .CourseSearchContainer {
+    width: 100%;
+  }
+  .CoursesHeadingContainer {
+    flex-direction: column;
+  }
+  .CoursesHeading h1 {
+    font-size: 3rem;
+  }
+  .CoursesHeading img {
+    display: none;
+  }
+  .CoursesHeadingContainer p {
+    font-size: 1.2rem;
+  }
+  .CourseSearchContainer input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 15px;
+  }
+  .CourseSearchFilter {
+    width: 100%;
+  }
+  .CourseSearchContainer select {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .Courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    max-width: 100%;
+  }
+}
