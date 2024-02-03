@@ -71,10 +71,10 @@ const Cover = () => {
               ))
             : null}
 
-          <div className={styles.courseSearchContainer_h}>
+          {/* <div className={styles.courseSearchContainer_h}>
             <input placeholder="Search Course.." type="text" />
             <div>Go</div>
-          </div>
+          </div> */}
         </div>
         <div className={styles.nextEventContainerMobile}>
           <Swiper

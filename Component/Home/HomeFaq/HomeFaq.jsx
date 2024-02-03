@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
+import React, { useEffect, useState } from "react";
 import styles from "./HomeFaq.module.css";
 import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
 import { gsap } from "gsap";
 import { useDispatch, useSelector } from "react-redux";
 import { CodePurpleAction } from "@/Store/Store";
+import { viewallQuestion } from "@/Component/Api/question";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 const HomeFaq = () => {
   const [currentQ, setcurrentQ] = useState(null);
@@ -15,53 +19,12 @@ const HomeFaq = () => {
   const eventClose = (i) => {
     setcurrentQ(null);
   };
-
-  const FaqData = [
-    {
-      id: 1,
-      category: 1,
-      Question: "Ouestion 1",
-      Ans: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy",
-    },
-    {
-      id: 2,
-      category: 1,
-      Question: "Ouestion 2",
-      Ans: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy",
-    },
-    {
-      id: 2,
-      category: 1,
-      Question: "Ouestion 2",
-      Ans: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy",
-    },
-    {
-      id: 2,
-      category: 1,
-      Question: "Ouestion 2",
-      Ans: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy",
-    },
-    {
-      id: 3,
-      category: 2,
-      Question: "Ouestion 3",
-      Ans: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy",
-    },
-    {
-      id: 4,
-      category: 3,
-      Question: "Ouestion 4",
-      Ans: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy dummy, dummy",
-    },
-  ];
-  // isFaq
   var isFaq = useSelector((store) => {
     return store.isFaq;
   });
-  // dispatch
+
   const dispatch = useDispatch();
-  // gsap
-  // gsap.registerPlugin(ScrollTrigger);
+
   let tl = gsap.timeline({ paused: true, reversed: true });
   const faqHandler = () => {
     dispatch(CodePurpleAction.faqtHandler());
@@ -91,6 +54,16 @@ const HomeFaq = () => {
       bottom: "4%",
       ease: "none",
     });
+  };
+  const [allquestion, setallquestion] = useState([]);
+
+  useEffect(() => {
+    getAllquestion();
+  }, []);
+
+  const getAllquestion = async () => {
+    var alldata = await viewallQuestion();
+    setallquestion(alldata);
   };
   return (
     <>
@@ -125,47 +98,34 @@ const HomeFaq = () => {
               </p>
             </div>
             <hr />
-            <div className={styles.faqBodyContent}>
-              <div className={styles.FaqQsContainer}>
-                {FaqData.map((data, i) => {
-                  return (
-                    <>
-                      {data.category == category && (
-                        <div key={i} className={`${styles.FaqQs} `}>
-                          <div className={styles.FaqQsHead}>
-                            <h1>How to get certified?</h1>
-                            {currentQ != i && (
-                              <CiSquarePlus
-                                onClick={() => eventOpen(i)}
-                                className={`${styles.FaqQsHeadOpen_} animate__fadeIn animate__animated`}
-                                id={data.id}
-                              />
-                            )}
-                            {currentQ == i && (
-                              <CiSquareMinus
-                                onClick={() => eventClose(i)}
-                                className={`${styles.FaqQsHeadOpen_} animate__fadeIn animate__animated`}
-                                id={data.id}
-                              />
-                            )}
-                          </div>
-                          {currentQ == i && (
-                            <p className="animate__fadeIn animate__animated">
-                              Lorem Ipsum is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry's standard dummy dummy, dummy Lorem Ipsum
-                              is simply dummy text of the printing and
-                              typesetting industry. Lorem Ipsum has been the
-                              industry's standard dummy dummy, dummy
-                            </p>
-                          )}
-                        </div>
+            {allquestion.length !== 0
+              ? allquestion.map((data, i) => (
+                  <div key={i} className={`${styles.FaqQs} `}>
+                    <div className={styles.FaqQsHead}>
+                      <h1>{data.title}</h1>
+                      {currentQ != i && (
+                        <CiSquarePlus
+                          onClick={() => eventOpen(i)}
+                          className={`${styles.FaqQsHeadOpen_} animate__fadeIn animate__animated`}
+                          id={data.id}
+                        />
                       )}
-                    </>
-                  );
-                })}
-              </div>
-            </div>
+                      {currentQ == i && (
+                        <CiSquareMinus
+                          onClick={() => eventClose(i)}
+                          className={`${styles.FaqQsHeadOpen_} animate__fadeIn animate__animated`}
+                          id={data.id}
+                        />
+                      )}
+                    </div>
+                    {currentQ == i && (
+                      <p className="animate__fadeIn animate__animated">
+                        {data.description}
+                      </p>
+                    )}
+                  </div>
+                ))
+              : null}
           </div>
         )}
       </div>

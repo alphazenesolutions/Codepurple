@@ -1,17 +1,21 @@
 import axios from "axios";
 
 export const Courses = axios.create({
-  baseURL: `http://localhost:3000/courses`,
+  baseURL: `https://api.codepurple.in/courses`,
 });
 
 export const Entrolluser = axios.create({
-  baseURL: `http://localhost:3000/entrolluser`,
+  baseURL: `https://api.codepurple.in/entrolluser`,
 });
 
 export const Contactuser = axios.create({
-  baseURL: `http://localhost:3000/contactuser`,
+  baseURL: `https://api.codepurple.in/contactuser`,
 });
 
 export const Cover = axios.create({
-  baseURL: `http://localhost:3000/cover`,
+  baseURL: `https://api.codepurple.in/cover`,
+});
+
+export const Question = axios.create({
+  baseURL: `https://api.codepurple.in/question`,
 });
