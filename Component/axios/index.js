@@ -19,3 +19,15 @@ export const Cover = axios.create({
 export const Question = axios.create({
   baseURL: `https://api.codepurple.in/question`,
 });
+
+export const Modules = axios.create({
+  baseURL: `https://api.codepurple.in/modules`,
+});
+
+export const Lesson = axios.create({
+  baseURL: `https://api.codepurple.in/lesson`,
+});
+
+export const Courseproject = axios.create({
+  baseURL: `https://api.codepurple.in/courseproject`,
+});

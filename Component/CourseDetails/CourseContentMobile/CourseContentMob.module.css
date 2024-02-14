@@ -9,41 +9,61 @@
   padding-bottom: 20px;
 }
 
+.courseExpandMainHeadContainer1 {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 20px;
+}
+
 .courseExpandMainHeadHeading {
   position: relative;
 }
+
 .courseExpandMainHeadHeading h1 {
   font-size: 4rem;
   width: 100%;
   font-family: var(--secondary-font);
 }
+
 .syllabusContainer {
   position: relative;
+  cursor: pointer;
 }
+
 .syllabusContainer img {
   position: absolute;
   top: 0;
   right: -12px;
   z-index: -1;
 }
+
 .syllabusContainer h1 {
   font-family: var(--secondary-font);
   font-size: 3rem;
 }
+
 .syllabusContainer h1 span {
   color: var(--color-white);
 }
+
 .courseExpandMainHeadHeading img {
   position: absolute;
   right: -10%;
   top: -25%;
 }
+
 .courseExpandMainHeadHeading p {
   font-family: var(--primary-font);
   line-height: 1.5;
   font-size: 1.6rem;
   margin-top: 10px;
 }
+
 .courseExpandMainHeadContainer {
   display: flex;
   margin-top: 50px;
@@ -51,21 +71,27 @@
   align-items: flex-start;
   margin-bottom: 20px;
 }
+
 .courseExpandMainHeadHeading h1 {
   font-size: 2.3rem;
 }
+
+
 .courseExpandMainHeadHeading img {
   display: none;
 }
+
 .courseExpandMainHeadHeading p {
   font-size: 1.2rem;
   margin-top: 5px;
   margin-bottom: 20px;
 }
+
 .syllabusContainer img {
   right: -10px;
   width: 96px;
 }
+
 .syllabusContainer h1 {
   font-size: 2rem;
 }
@@ -74,22 +100,43 @@
   font-size: 1.9rem;
   margin-right: 10px;
 }
+
+.coruseContentExpandIcon1 {
+  font-size: 4rem;
+  margin-right: 10px;
+}
+
+.coruseContentHead1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .coruseContentHead {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
+
 .coruseContentHead h1 {
   font-size: 2.3rem;
   font-family: var(--secondary-font);
 }
+
+.coruseContentHead1 h1 {
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  margin-top: 1rem;
+}
+
 .coruseContentDesc li {
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 24px 0;
   font-family: var(--primary-font);
 }
+
 .coruseContentDesc h5 {
   font-size: 1.5rem;
   font-weight: 200;

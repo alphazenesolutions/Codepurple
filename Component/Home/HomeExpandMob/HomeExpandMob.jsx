@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import styles from "./HomeExpandMob.module.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
