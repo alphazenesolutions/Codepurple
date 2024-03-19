@@ -7,8 +7,8 @@ const CourseCover = () => {
         <img src="/Highlight.png" alt="" />
         <h1 className={styles.CourseCoverHeading_w}>
           Start Your <span className={styles.CourseCoverG}> Career</span> <br />{" "}
-          Lorem, ipsum. <span className={styles.CourseCoverP}>Courses</span>{" "}
-          Lorem <br /> ipsum dolor sit . . . .
+          
+          Explore Endless Learning Opportunities with<span className={styles.CourseCoverP}> CodePurple</span>{" "} Today! 
         </h1>
         <h1 className={styles.CourseCoverHeading_m}>
           Start Your <span className={styles.CourseCoverG}> Career</span> <br />{" "}
@@ -16,6 +16,7 @@ const CourseCover = () => {
           Lorem ipsum dolor sit . . . .
         </h1>
       </div>
+      
     </div>
   );
 };

@@ -57,6 +57,7 @@ const Cover = () => {
           <h1>Find Your Dream Job !</h1>
         </div>
         <div className={styles.nextEventContainer}>
+          {console.log(coveritem)}
           {coveritem.length !== 0
             ? coveritem.map((data, index) => (
                 <img

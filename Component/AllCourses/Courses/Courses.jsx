@@ -45,8 +45,9 @@ const Courses = () => {
             <img src="/Highlight.png" alt="" />
           </div>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />{" "}
-            Eaque est nostrum officiis quos facilis,
+          Discover Our Offerings:Find Your Path with 
+          <br/>CodePurple's All-Inclusive Learning Catalog!
+
           </p>
         </div>
         <div className={styles.CourseSearchContainer}>

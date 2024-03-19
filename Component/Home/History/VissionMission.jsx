@@ -45,12 +45,10 @@ const VissionMission = () => {
             <div className={styles.Advantages}>
               <h1>Our Mission</h1>
               <p>
-                When you prepare your own meals, you have control over the
-                ingredients you use. You can choose fresh, high-quality
-                ingredients and avoid additives, preservatives, and unhealthy
-                additives that are often found in processed foods and restaurant
-                meals. This gives you the ability to make healthier choices,
-                control portion sizes, and cater to specific dietary needs.
+                We make learning tech easy for job seekers, giving them skills they need for digital jobs. Our
+                courses get people ready for real work, boosting confidence for job hunting. We want to
+                help close the gap between education and what jobs need, so people can do well in tech.
+
               </p>
             </div>
           </div>
@@ -59,11 +57,10 @@ const VissionMission = () => {
             <div className={styles.Advantages}>
               <h1> Our Vission</h1>
               <p>
-                One of the challenges with eating out is the tendency for larger
-                portion sizes, which can contribute to overeating. Cooking at
-                home allows you to control portion sizes and be mindful of your
-                calorie intake. This can be particularly beneficial for weight
-                management and maintaining a balanced diet.
+                We dream of a world where everyone can learn and succeed in the digital era. Our aim is to
+                help people gain the skills and confidence to thrive in a fast-changing tech world. By
+                connecting education with job needs, we want to create a future where everyone can reach
+                their goals.
               </p>
             </div>
           </div>

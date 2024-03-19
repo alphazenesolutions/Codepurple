@@ -73,8 +73,7 @@ const SideNav = () => {
                   <div>Go</div>
                 </div>
                 <p className={styles.courseSearchQuote}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Delectus odit explicabo, maiores reiciendis ab ut
+                Find Your Path: Explore and Discover the Perfect Course In CodePurple.
                 </p>
               </div>
 

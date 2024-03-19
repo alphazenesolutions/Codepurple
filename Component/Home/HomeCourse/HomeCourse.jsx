@@ -54,15 +54,19 @@ const HomeCourse = () => {
           <div className={styles.CourseHomeHeadHeading}>
             <h1> Trending Courses </h1>
             <img src="/Highlight.png" alt="" />
-            <p>Empower your skills with guided learning</p>
+            <p>Explore What's Hot: Check Out Our Trending Tech Courses for Exciting Learning Opportunities!</p>
           </div>
           <p></p>
         </div>
 
         <div className={styles.homeCourse}>
           <div className={styles.innerHomeCourse}>
-            {coursedata.length !== 0
+          {console.log(coursedata)}
+            {
+            coursedata.length !== 0
+            
               ? coursedata.map((data, index) => (
+
                   <CourseCard1
                     fun={() => {
                       courseDetailsHandler(data.id);

@@ -153,9 +153,7 @@ const Nav = () => {
               </div>
               <img className={styles.contactHeadingHeart} src="/heart.png" />
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. T
-                emporibus, omnisemporibus, omnis. <br /> Lorem, ipsum dolor sit
-                amet consectetur adipisicing omnis.
+              Get in Touch: Let's Chat, Code, and Make Your Tech Dreams a Reality Together!
               </p>
             </div>
             <hr />
@@ -214,8 +212,7 @@ const Nav = () => {
               <div className={styles.contactAddress}>
                 <h1>Contact Us</h1>
                 <p className={styles.contactAddress_p}>
-                  As a human; I am flesh and blood; I can be ignored. But as a
-                  symbol, I can be incorruptible.
+                Connect with Us: Reach Out and Let's Start Building Your Tech Success Story Today!
                 </p>
                 <div className={styles.ourMobile}>
                   <img src="/Ringing Phone.png" alt="" />

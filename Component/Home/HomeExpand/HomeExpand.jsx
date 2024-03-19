@@ -188,8 +188,7 @@ const HomeExpand = () => {
           <h1>Why Choose Us ?</h1>
           <img src="/Highlight.png" alt="" />
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />{" "}
-            Eaque est nostrum officiis quos facilis,
+          Choose CodePurple for expert IT training and unlock your potential with us today.
           </p>
         </div>
         <p></p>
@@ -202,22 +201,22 @@ const HomeExpand = () => {
         >
           <div className={styles.friendlyHead}>
             <FaLocationArrow className={styles.homeExpandIcon} />
-            <h1>150+ Happy students:</h1>
+            <h1>Expert Industrial Trainers:</h1>
           </div>
           <div id="ExpandOne_" className={`${styles.friendlyFlex} ExpandOne_`}>
             <div className={styles.friendlyTrainingLeft}>
               <div className={styles.friendlyDesc}>
                 <li id={"ExOne_"} className={styles.friendlyDesctext}>
-                  Engaging learning environment leading to a high level
-                  satisfaction
+                Learn from industry professionals who bring real-world development experience to the
+classroom, ensuring comprehensive learning.
                 </li>
                 <li id={"ExTwo_"} className={styles.friendlyDesctext}>
-                  Small class size for personalized attention
+                Experience a welcoming environment where learning feels like a conversation, not a lectur
                 </li>
-                <li id={"ExThree_"} className={styles.friendlyDesctext}>
+                {/* <li id={"ExThree_"} className={styles.friendlyDesctext}>
                   Active student support system for the wellbeing and success of
                   each student
-                </li>
+                </li> */}
                 {/* <p id={"ExFour_"}>Loren Ipsum</p>
                 <p id={"ExFive_"}>Loren Ipsum</p> */}
               </div>
@@ -235,7 +234,7 @@ const HomeExpand = () => {
           <div className={styles.friendlyHead}>
             <FaLocationArrow className={styles.homeExpandIcon} />
 
-            <h1>Developers as trainers</h1>
+            <h1>Comprehensive Soft Skills Training:</h1>
           </div>
           <div
             id="flexExpandTwo_"
@@ -244,17 +243,17 @@ const HomeExpand = () => {
             <div className={styles.friendlyTrainingLeft}>
               <div className={styles.friendlyDesc}>
                 <li id={"Ex2One_"} className={styles.friendlyDesctext}>
-                  Acquire practical industry knowledge from trainers who are not
-                  only educators but also industry professionals.
+                Beyond coding, we equip you with essential soft skills for career success in the tech
+industry.
                 </li>
-                <li id={"Ex2Two_"} className={styles.friendlyDesctext}>
+                {/* <li id={"Ex2Two_"} className={styles.friendlyDesctext}>
                   Experience hands-on learning with trainers to learn practical
                   application of concepts
                 </li>
                 <li id={"Ex2Three_"} className={styles.friendlyDesctext}>
                   Gain access to industry networks and potential mentorship to
                   enhance your overall experience.
-                </li>
+                </li> */}
                 {/* <p id={"Ex2Four_"}>Loren Ipsum</p>
                 <p id={"Ex2Five_"}>Loren Ipsum</p> */}
               </div>
@@ -272,7 +271,7 @@ const HomeExpand = () => {
           <div className={styles.friendlyHead}>
             <FaLocationArrow className={styles.homeExpandIcon} />
 
-            <h1>Optimised Career Placement Service</h1>
+            <h1>Engaging Activities and Interview Prep:</h1>
           </div>
           <div
             id="flexExpandThird_"
@@ -281,17 +280,18 @@ const HomeExpand = () => {
             <div className={styles.friendlyTrainingLeft}>
               <div className={styles.friendlyDesc}>
                 <li id={"Ex3One_"} className={styles.friendlyDesctext}>
-                  Access exclusive internship opportunities facilitated by our
-                  placement assistance team.
+                Elevate your communication skills through interactive sessions, mock interviews, and group
+discussions.
+
                 </li>
-                <li id={"Ex3Two_"} className={styles.friendlyDesctext}>
+                {/* <li id={"Ex3Two_"} className={styles.friendlyDesctext}>
                   Prepare for job interviews with confidence through mock
                   interviews and resume workshops.
                 </li>
                 <li id={"Ex3Three_"} className={styles.friendlyDesctext}>
                   Benefit from our strong relationships with a diverse range of
                   employers, opening up a wide array of job opportunities.
-                </li>
+                </li> */}
                 {/* <p id={"Ex3Four_"}>Loren Ipsum</p>
                 <p id={"Ex3Five_"}>Loren Ipsum</p> */}
               </div>

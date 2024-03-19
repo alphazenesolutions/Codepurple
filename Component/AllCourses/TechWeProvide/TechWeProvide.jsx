@@ -11,8 +11,7 @@ const TechWeProvide = ({ techdata }) => {
               <h1>Tech We Provide</h1>
               <img src="/Highlight.png" alt="" />
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />{" "}
-                Eaque est nostrum officiis quos facilis,
+              Explore Our Tech Toolbox: Dive into the Array of Technologies Offered by CodePurple Today!
               </p>
             </div>
             <p></p>

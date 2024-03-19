@@ -120,8 +120,8 @@
 }
 .CourseHomeHeadHeading img {
   position: absolute;
-  right: -5%;
-  top: -20%;
+  right: 19%;
+  top: -22%;
 }
 .CourseHomeHeadHeading p {
   font-family: var(--primary-font);

@@ -12,8 +12,7 @@ const Testimonial = () => {
             <h1>Learners Love Us</h1>
             <img src="/Highlight.png" alt="" />
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />{" "}
-              Eaque est nostrum officiis quos facilis,
+            Words from Our Students: Hear Their Stories and Successes with CodePurple Training!
             </p>
           </div>
           <p></p>

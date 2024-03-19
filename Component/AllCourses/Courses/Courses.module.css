@@ -19,8 +19,8 @@
 }
 .CoursesHeading img {
   position: absolute;
-  right: 0;
-  top: -50%;
+  right: -15%;
+  top: -38%;
 }
 .CoursesHeadingContainer p {
   line-height: 1.5;
